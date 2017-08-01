@@ -1,4 +1,5 @@
 import { Component, Input} from '@angular/core';
+import {  NavController, NavParams } from 'ionic-angular';
 
 
 /**
@@ -14,11 +15,15 @@ import { Component, Input} from '@angular/core';
 export class HorarioElementComponent {
   
 
-  @Input() element: {index:number, materia: string};
+  @Input() element: {index:number, materia: string, cmateria};
 
-  constructor() {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
     console.log('Hello HorarioElementComponent Component');
     
+  }
+
+  accessButton(cmateria){
+    this.navCtrl.push(cmateria);
   }
 
 }

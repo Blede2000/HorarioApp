@@ -11,6 +11,10 @@ import { MiercolesPage} from '../pages/miercoles/miercoles'
 import { JuevesPage } from "../pages/jueves/jueves";
 import { ViernesPage } from "../pages/viernes/viernes";
 
+import { PoliticaPage } from "../pages/materias/politica/politica";
+import { ReligionPage } from "../pages/materias/religion/religion";
+import { SistemasPage } from "../pages/materias/sistemas/sistemas";
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -22,7 +26,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MiercolesPage,
     JuevesPage,
     ViernesPage,
-    HorarioElementComponent
+    HorarioElementComponent,
+    PoliticaPage,
+    ReligionPage,
+    SistemasPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +43,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MiercolesPage,
     JuevesPage,
     ViernesPage,
-    HorarioElementComponent
+    HorarioElementComponent,
+    PoliticaPage,
+    ReligionPage,
+    SistemasPage
   ],
   providers: [
     StatusBar,
