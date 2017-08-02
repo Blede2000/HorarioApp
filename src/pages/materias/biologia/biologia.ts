@@ -8,16 +8,16 @@ import {  NavController, NavParams } from 'ionic-angular';
  * on Ionic pages and navigation.
  */
 @Component({
-  selector: 'page-ed-fisica',
-  templateUrl: 'ed-fisica.html',
+  selector: 'page-biologia',
+  templateUrl: 'biologia.html',
 })
-export class EdFisicaPage {
+export class BiologiaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad EdFisicaPage');
+    console.log('ionViewDidLoad BiologiaPage');
   }
 
 }

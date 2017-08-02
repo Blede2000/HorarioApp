@@ -1,6 +1,13 @@
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
 
+import { InglesPage } from "../materias/ingles/ingles";
+import { EspanholPage } from "../materias/espanhol/espanhol";
+import { FisicaPage } from "../materias/fisica/fisica";
+import { ConstitucionPage } from "../materias/constitucion/constitucion";
+import { ReligionPage } from "../materias/religion/religion";
+import { EmprendimientoPage } from "../materias/emprendimiento/emprendimiento";
+
 /**
  * Generated class for the MiercolesPage page.
  *
@@ -14,13 +21,13 @@ import {  NavController, NavParams } from 'ionic-angular';
   templateUrl: 'miercoles.html',
 })
 export class MiercolesPage {
-  materias = [{index: 1, materia: 'Conversacion'},
-  {index: 2, materia: "Español"}, 
-  {index: 3, materia: 'Español'}, 
-  {index: 4, materia: 'Fisica'},
-  {index: 5, materia: 'Constitucion'},
-  {index: 6, materia: 'Religion'},
-  {index: 7, materia: 'Emprendimiento'}];
+  materias = [{index: 1, materia: 'Ingles/Conversacion', cmateria: InglesPage},
+  {index: 2, materia: "Español", cmateria: EspanholPage}, 
+  {index: 3, materia: 'Español', cmateria: EspanholPage}, 
+  {index: 4, materia: 'Fisica', cmateria: FisicaPage},
+  {index: 5, materia: 'Constitucion', cmateria: ConstitucionPage},
+  {index: 6, materia: 'Religion', cmateria: ReligionPage},
+  {index: 7, materia: 'Emprendimiento', cmateria: EmprendimientoPage}];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
