@@ -8,6 +8,8 @@ import { InglesPage } from "../materias/ingles/ingles";
 import { EspanholPage } from "../materias/espanhol/espanhol";
 import { MatematicasPage } from "../materias/matematicas/matematicas";
 
+import { AddTareaPage } from "../add-tarea/add-tarea";
+
 /**
  * Generated class for the LunesPage page.
  *
@@ -30,6 +32,9 @@ export class LunesPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  tareaAdd(){
+    this.navCtrl.push(AddTareaPage);
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad LunesPage');
   }

@@ -7,3 +7,9 @@
     <ion-title>Arte</ion-title>
   </ion-navbar>
 </ion-header>
+<ion-content padding>
+
+  <ion-card *ngFor="let tarea of tareas">
+    <tarea-element [tareaElement]="tarea"></tarea-element>
+  </ion-card>
+</ion-content>

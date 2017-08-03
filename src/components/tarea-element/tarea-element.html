@@ -1,0 +1,17 @@
+  <ion-card-header>
+    {{ tareaElement.titulo}}
+  </ion-card-header>
+  <ion-card-content>
+    {{ tareaElement.descripcion}}
+  </ion-card-content>
+  <ion-row>
+    <ion-col>
+      <ion-icon name="clcok"></ion-icon>
+      <div>Agregado: {{ tareaElement.creado }}</div>
+    </ion-col>
+
+    <ion-col>
+      <ion-icon name="clcok"></ion-icon>
+      <div>Para la fecha: {{ tareaElement.para }}</div>
+    </ion-col>
+  </ion-row>

@@ -12,7 +12,7 @@ import {  NavController, NavParams } from 'ionic-angular';
   templateUrl: 'arte.html',
 })
 export class ArtePage {
-
+  tareas = []
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

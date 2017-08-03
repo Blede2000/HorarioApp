@@ -1,0 +1,62 @@
+<!--
+  Generated template for the AddTareaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>addTarea</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+
+  <ion-item>
+    <ion-label fixed>Titulo</ion-label>
+    <ion-input type="text" value=""  #title></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Descripcion de Tarea</ion-label>
+    <ion-input type="textarea" value="" #desc></ion-input>
+  </ion-item>
+
+  <ion-item>
+  <ion-label>Materia</ion-label>
+  <ion-select [(ngModel)]="materias">
+    <ion-option value="arte">Arte</ion-option>
+    <ion-option value="biologia">Biologia</ion-option>
+    <ion-option value="constitucion">Constitucion</ion-option>
+    <ion-option value="economia">Economia</ion-option>
+    <ion-option value="ed-fisica">Ed Fisica</ion-option>
+    <ion-option value="emprendimiento">Emprendimiento</ion-option>
+    <ion-option value="espanhol">Español</ion-option>
+    <ion-option value="etica">Etica</ion-option>
+    <ion-option value="filosofia">Filosofia</ion-option>
+    <ion-option value="fisica">Fisica</ion-option>
+    <ion-option value="guiatura">Guiatura</ion-option>
+    <ion-option value="icfes">ICFES</ion-option>
+    <ion-option value="ingles">Ingles</ion-option>
+    <ion-option value="matematicas">Matematicas</ion-option>
+    <ion-option value="politica">Politica</ion-option>
+    <ion-option value="quimica">Quimica</ion-option>
+    <ion-option value="religion">Religion</ion-option>
+    <ion-option value="sistemas">Sistemas</ion-option>
+    
+  </ion-select>
+</ion-item>
+  
+  <ion-item>
+    <ion-label fixed>Fecha para entregar</ion-label>
+    <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="entrega"></ion-datetime>
+  </ion-item>
+
+  <button ion-button full (click)="addUnaTarea(title.value, desc.value)">Agregar Tarea</button>
+
+</ion-list>
+</ion-content>

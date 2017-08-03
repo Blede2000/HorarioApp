@@ -4,6 +4,9 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HorarioElementComponent  } from "../components/horario-element/horario-element";
+import { TareaElementComponent  } from "../components/tarea-element/tarea-element";
+import { AddTareaPage } from '../pages/add-tarea/add-tarea';
+
 
 import { LunesPage } from '../pages/lunes/lunes';
 import { MartesPage } from "../pages/martes/martes";
@@ -43,6 +46,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     JuevesPage,
     ViernesPage,
     HorarioElementComponent,
+    TareaElementComponent,
+    AddTareaPage,
     PoliticaPage,
     ReligionPage,
     SistemasPage,
@@ -75,6 +80,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     JuevesPage,
     ViernesPage,
     HorarioElementComponent,
+    TareaElementComponent,
+    AddTareaPage,
     PoliticaPage,
     ReligionPage,
     SistemasPage,
